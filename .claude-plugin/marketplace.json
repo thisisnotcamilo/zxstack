@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "zxstack",
+  "description": "Marketplace for the zxstack Claude Code plugin.",
+  "owner": {
+    "name": "thisisnotcamilo",
+    "url": "https://github.com/thisisnotcamilo"
+  },
+  "plugins": [
+    {
+      "name": "zxstack",
+      "description": "Rigorous agent workflows for Claude Code: an engineering mode, principles, parallel subagent playbooks, and prose discipline.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}
