@@ -62,7 +62,7 @@ The default answer is `/zxstack:eng-mode`, which runs most of the others when it
 | Know why code is shaped this way, or where a number came from | [`/zxstack:why`](../why/SKILL.md) |
 | Understand a change or subsystem, explained plainly | [`/zxstack:teach`](../teach/SKILL.md) |
 | Catch up on their own recent work on a topic | [`/zxstack:recall`](../recall/SKILL.md) |
-| Catch up on what changed in this chat since their last message, in plain words and small visuals, with every item waiting on them listed and decidable from the reply alone | [`/zxstack:ketchup`](../ketchup/SKILL.md) |
+| Catch up on what changed in this chat since their last message, in plain words and small visuals, with every call waiting on them listed and decidable from the reply alone | [`/zxstack:recap`](../recap/SKILL.md) |
 | Know what a small diff could break outside itself | [`/zxstack:blast-radius`](../blast-radius/SKILL.md) |
 | Settle types and module shape before code that crosses a function boundary | [`/zxstack:architect`](../architect/SKILL.md) |
 | Get several attempts at one brief, merged into the best one | [`/zxstack:arena`](../arena/SKILL.md) |
@@ -96,7 +96,7 @@ Close calls:
 - `/zxstack:arena` gives every worker the same brief and merges the best parts. `/zxstack:swarm` splits work into slices or a race and returns one report.
 - `/zxstack:architect` implements right after it settles the design. Add "with checkpoint" to review the design before it writes code.
 - `/zxstack:interrogate` reviews the diff. `/zxstack:blast-radius` looks for breakage outside the diff and proves the one fact that makes the change safe.
-- `/zxstack:recall` rebuilds context across recent chats. `/zxstack:ketchup` covers only this chat since the user's last message. Resuming one specific chat or branch is the Session pickup playbook.
+- `/zxstack:recall` rebuilds context across recent chats. `/zxstack:recap` covers only this chat since the user's last message. Resuming one specific chat or branch is the Session pickup playbook.
 - `/zxstack:figure-it-out` designs one rigorous run. The Autonomous run playbook drives one task to a finish condition.
 
 Not in zxstack:

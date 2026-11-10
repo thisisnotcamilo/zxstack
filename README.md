@@ -18,7 +18,7 @@ Every skill is a command named `/zxstack:<skill>`.
 | Area | Skills |
 | --- | --- |
 | Working mode | `eng-mode`, `eng-help`, `setup-zxstack` |
-| Understand | `how`, `why`, `teach`, `recall`, `ketchup`, `bro`, `in-your-own-words` |
+| Understand | `how`, `why`, `teach`, `recall`, `recap`, `bro`, `in-your-own-words` |
 | Design | `architect`, `arena`, `interrogate`, `figure-it-out`, `sharpen`, `statechart` |
 | Build and verify | `tdd`, `swarm`, `blast-radius`, `benchmark-checklist`, `show-me-your-work`, `create-verification-skill`, `maintain-verification-skill`, `create-formal-verification-skill`, `maintain-formal-verification-skill`, `typescript-best-practices` |
 | Clean and learn | `no-comments`, `unslop`, `technical-writing`, `reflect`, `correct`, `automate-me` |
