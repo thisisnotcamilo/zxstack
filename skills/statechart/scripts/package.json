@@ -1,5 +1,5 @@
 {
-  "name": "@cursor-skill/statechart",
+  "name": "@zxstack/statechart",
   "private": true,
   "type": "module",
   "scripts": {
