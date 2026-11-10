@@ -1,6 +1,10 @@
 # zxstack
 
-zxstack is a Claude Code plugin of agent workflows for careful engineering work. `/zxstack:eng-mode` sets the working style: it states the goal first, routes the task to a playbook, writes plain prose, and verifies the work before it reports done. The other skills cover design, review, explanation, parallel subagents, and writing. eng-mode routes to them, and you can also run them directly.
+zxstack is a Claude Code plugin of workflows for quality agentic engineering.
+
+`/zxstack:eng-mode` sets the working style: it states the goal first, routes the task to a playbook, writes plain prose, and verifies the work before it reports done.
+
+We have other skills that cover design, review, explanation, parallel subagents, and writing. `/zxstack:eng-mode` routes to them, and you can also run them directly.
 
 ## Install
 
@@ -9,7 +13,7 @@ claude plugin marketplace add thisisnotcamilo/zxstack
 claude plugin install zxstack@zxstack
 ```
 
-Inside a session, `/plugin` runs the same steps. Then run `/zxstack:setup-zxstack` once. It writes `~/.claude/rules/zxstack-models.md`, which picks the model and reasoning effort for each subagent role.
+Then run `/zxstack:setup-zxstack` once.
 
 ## Commands
 
@@ -23,8 +27,6 @@ Every skill is a command named `/zxstack:<skill>`.
 | Build and verify | `tdd`, `swarm`, `blast-radius`, `benchmark-checklist`, `show-me-your-work`, `create-verification-skill`, `maintain-verification-skill`, `create-formal-verification-skill`, `maintain-formal-verification-skill`, `typescript-best-practices` |
 | Clean and learn | `no-comments`, `unslop`, `technical-writing`, `reflect`, `correct`, `automate-me` |
 | Principles | 24 `principle-*` skills. eng-mode indexes them, and each one says when it applies. |
-
-The plugin also ships two agents. `zxstack:eng-agent` is the delegate that eng-mode spawns for code-writing steps. `zxstack:comment-sicko` is the comment reviewer that `no-comments` spawns.
 
 ## Contributing
 
@@ -47,7 +49,7 @@ claude plugin validate .
 rg -i 'pstack|poteto' --glob '!README.md' --glob '!LICENSE' --glob '!UPSTREAM.md'
 ```
 
-The last command must print nothing. Then bump `version` in `.claude-plugin/plugin.json`. Installed copies update only when the version changes. To try local changes before you push, start Claude Code with `claude --plugin-dir /path/to/zxstack`.
+Then bump `version` in `.claude-plugin/plugin.json`. Installed copies update only when the version changes. To try local changes before you push, start Claude Code with `claude --plugin-dir /path/to/zxstack`.
 
 ## Upstream
 

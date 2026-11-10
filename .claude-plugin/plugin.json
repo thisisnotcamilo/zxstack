@@ -1,7 +1,7 @@
 {
   "name": "zxstack",
   "version": "0.2.0",
-  "description": "Rigorous agent workflows for Claude Code: an engineering mode, principles, parallel subagent playbooks, and prose discipline.",
+  "description": "Plugin of workflows for quality agentic engineering.",
   "author": {
     "name": "thisisnotcamilo",
     "url": "https://github.com/thisisnotcamilo"
