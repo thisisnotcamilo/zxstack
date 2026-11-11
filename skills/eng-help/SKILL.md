@@ -72,6 +72,7 @@ The default answer is `/zxstack:eng-mode`, which runs most of the others when it
 | Apply TypeScript rules to `.ts` or `.tsx` work | [`/zxstack:typescript-best-practices`](../typescript-best-practices/SKILL.md) |
 | Strip comments before review, using a reviewer that didn't write them | [`/zxstack:no-comments`](../no-comments/SKILL.md) |
 | Clean AI tells out of prose | [`/zxstack:unslop`](../unslop/SKILL.md) |
+| Commit in their format, with approval in interactive sessions and a check on every message. It runs on its own for every commit | [`/zxstack:commit`](../commit/SKILL.md) |
 | Write docs, an RFC, a README, a PR description, or a commit message to a standard | [`/zxstack:technical-writing`](../technical-writing/SKILL.md) |
 | Hear the last reply again in plain words | [`/zxstack:bro`](../bro/SKILL.md) |
 | Give agents a scripted way to drive the app and prove behavior | [`/zxstack:create-verification-skill`](../create-verification-skill/SKILL.md) |

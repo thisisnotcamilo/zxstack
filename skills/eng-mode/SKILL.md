@@ -25,7 +25,8 @@ Remaining triggers:
 - Contested design → [the **interrogate** skill](../interrogate/SKILL.md) (multi-model adversarial) before shipping.
 - Nontrivial multi-step → write the throughput checkpoint (Feature step 3).
 - Any prose surface, your reply to the user included → [the **unslop** skill](../unslop/SKILL.md). Write the reply per **Writing the reply**. Agent-facing prose also follows Anthropic's `skill-creator` skill for authoring SKILL.md files when installed, else the Agent Skills format directly.
-- Docs, RFCs, readmes, PR descriptions, or commit messages → [the **technical-writing** skill](../technical-writing/SKILL.md).
+- Docs, RFCs, readmes, or PR descriptions → [the **technical-writing** skill](../technical-writing/SKILL.md).
+- Any commit, or a PR title → [the **commit** skill](../commit/SKILL.md).
 - Before commit → the `deslop` skill, when installed.
 - Before review → [the **no-comments** skill](../no-comments/SKILL.md).
 - Shipping UI / IDE / CLI → the matching control skill, when installed: `control-cli` (CLIs and TUIs) and `control-ui` (browser / Electron / web UIs). For bug fixes, reproduce first on the same surface yourself. Hand to the user only under the narrow Bug fix step 1 exception.

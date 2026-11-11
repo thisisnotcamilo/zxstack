@@ -4,11 +4,11 @@ Invoked at the end of every other playbook.
 
 **Worktree.** Work from a git worktree off main. Subagents inherit it. Multiple `Agent` calls on the same branch each get their own worktree, or `git fetch && git reset --hard origin/<branch>` between them. Dirty branch with unrelated work: patch out, fresh worktree, apply. Snarled worktree: reset from main, redo minimally.
 
-**Commits.** Commit liberally. Rebase into small, ordered commits before opening PRs. Each commit is a future PR: landable, ordered to tell the story. Amend when the fix belongs in a just-made commit. New commit when separable. Commit bodies don't restate the subject.
+**Commits.** Commit liberally. Rebase into small, ordered commits before opening PRs. Each commit is a future PR: landable, ordered to tell the story. Amend when the fix belongs in a just-made commit. New commit when separable. Write every commit with [the **commit** skill](../../commit/SKILL.md).
 
 **PRs.** Run the `deslop` skill, when installed, over the diff before commit and [the **no-comments** skill](../../no-comments/SKILL.md) before review. Write every PR title, description, and commit body with [the **technical-writing** skill](../../technical-writing/SKILL.md) (every layer except Diátaxis, and apply the STE vocabulary rules: one word per action, keep articles, a plain verb over `-ing` where one works), then apply [the **unslop** skill](../../unslop/SKILL.md).
 
-**Titles.** Conventional Commits `type(scope): subject`, no trailing period. Type such as `feat`, `fix`, `docs`, `refactor`, `test`, `chore`, or `perf`. Scope is the area, such as `zxstack` or `eng-mode`. Subject is short, imperative, and names a real symbol when one carries the change, for example `fix(zxstack): retarget opening-a-pr babysit trigger`.
+**Titles.** A squash merge makes the PR title the commit subject on trunk, so write it as a commit subject per [the **commit** skill](../../commit/SKILL.md), for example `fix(eng-mode): retarget opening-a-pr babysit trigger`.
 
 **Descriptions.** The PR body is a one-minute briefing, not a lab notebook, for a reviewer who has the diff. It says why the change exists, what it leaves out, what it could break, and how you proved it works. Write short, simple sentences with few identifiers, no walls of text. The body becomes the squash commit body, so keep that commit under about 40 lines. Use `##` headings, not bold lead-ins, in this order, and drop a section with nothing to say:
 

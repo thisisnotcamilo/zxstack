@@ -24,9 +24,11 @@ Every skill is a command named `/zxstack:<skill>`.
 | Working mode | `eng-mode`, `eng-help`, `setup-zxstack` |
 | Understand | `how`, `why`, `teach`, `recall`, `recap`, `bro`, `in-your-own-words` |
 | Design | `architect`, `arena`, `interrogate`, `figure-it-out`, `sharpen`, `statechart` |
-| Build and verify | `tdd`, `swarm`, `blast-radius`, `benchmark-checklist`, `show-me-your-work`, `create-verification-skill`, `maintain-verification-skill`, `create-formal-verification-skill`, `maintain-formal-verification-skill`, `typescript-best-practices` |
+| Build and verify | `commit`, `tdd`, `swarm`, `blast-radius`, `benchmark-checklist`, `show-me-your-work`, `create-verification-skill`, `maintain-verification-skill`, `create-formal-verification-skill`, `maintain-formal-verification-skill`, `typescript-best-practices` |
 | Clean and learn | `no-comments`, `unslop`, `technical-writing`, `reflect`, `correct`, `automate-me` |
 | Principles | 24 `principle-*` skills. eng-mode indexes them, and each one says when it applies. |
+
+`commit` also runs on its own whenever Claude commits. The plugin ships a hook, `hooks/check-commit-message.js`, that checks each new commit message and makes Claude amend one that breaks the format. The hook needs `node`.
 
 ## Contributing
 
@@ -46,6 +48,7 @@ Before you commit:
 claude plugin validate .
 (cd skills/eng-mode/scripts && bun install --frozen-lockfile && bun test watch-pr check-plan.test.ts)
 (cd skills/statechart/scripts && npm install --no-save fast-check@4.5.3 && npm test)
+node --test hooks/
 rg -i 'pstack|poteto' --glob '!README.md' --glob '!LICENSE' --glob '!UPSTREAM.md'
 ```
 
